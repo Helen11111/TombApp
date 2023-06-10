@@ -24,7 +24,7 @@ public class TombActivity extends AppCompatActivity implements View.OnClickListe
     ActivityTombBinding binding;
 
     private int score;
-    private int progress = 0;
+    private int progress;
     Timer timer;
     TimerTask task_timer;
     Integer time_end;
@@ -36,6 +36,7 @@ public class TombActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(binding.getRoot());
 
         score = 0;
+        progress = 0;
 
         binding.btnTreasure1.setOnClickListener(this);
         binding.btnTreasure2.setOnClickListener(this);
@@ -111,7 +112,7 @@ public class TombActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void endTomb(){
-        Toast.makeText(getApplicationContext(), "Your time for this level is " + time_end + " seconds!", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Your time:  " + time_end + " seconds!", Toast.LENGTH_LONG).show();
         timer.cancel();
     }
     private void find(int n) {
