@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TombApp</string>
+    <string name="welcome_to_the_tomb">Welcome to the Tomb</string>
+    <string name="find_treasures">Find 6 Treasures</string>
+    <string name="enter">Enter</string>
+</resources>
